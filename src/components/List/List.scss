@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+
+  .item {
+    min-width: 100px;
+    flex-grow: 1;
+    padding: 1rem;
+    color: #666;
+    font-weight: bold;
+    background-color: #eee;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: #fff;
+      background-color: #2eafb0;
+    }
+  }
+}
