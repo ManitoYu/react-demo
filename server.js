@@ -5,7 +5,7 @@ var config = require('./webpack.config');
 var server = new WebpackDevServer(webpack(config), {
 
   proxy: {
-    'api': 'http://192.168.162.128:8000'
+    '/api/*': 'http://192.168.162.128:8000'
   },
 
   publicPath: config.output.publicPath,
